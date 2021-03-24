@@ -32,13 +32,15 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.className="save-mode";
     label.innerText=taskString;
     label.className='task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="check-box";
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="task text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
@@ -92,14 +94,23 @@ var editTask=function(){
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText=editInput.value;
+        // listItem.classList.value="save-mode";
+        // label.classList.value="task";
         editBtn.innerText="Edit";
     }else{
         editInput.value=label.innerText;
+        // listItem.classList.value="edit-mode";
+        // label.classList.value="task-edit";
         editBtn.innerText="Save";
     }
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("edit-mode");
+    listItem.classList.toggle("save-mode");
+    label.classList.toggle("task");
+    label.classList.toggle("task-edit");
+    
+
 };
 
 
@@ -121,6 +132,7 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    listItem.querySelector("label").className="task-complete";
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -133,6 +145,7 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.querySelector("label").className="task";
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
