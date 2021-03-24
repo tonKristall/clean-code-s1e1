@@ -16,6 +16,7 @@ section {
 }
 .img-matrix {
   width: 100%;
+  text-transform: capitalize;
 }
 .matrix .more-inf {
   display: inline-block;
