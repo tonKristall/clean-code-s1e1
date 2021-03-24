@@ -13,11 +13,11 @@ body {
 .img-matrix {
   width: 100%;
 }
-.aaa .more_inf {
+.aaa .more-inf {
   display: inline-block;
   font-family: fantasy, cursive;
 }
-.more_inf::first-letter {
+.more-inf::first-letter {
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
@@ -147,10 +147,10 @@ button.delete img:hover {
 ul li input[type="text"] {
   display: none;
 }
-.editmode input[type="text"] {
+.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
-.editmode label {
+.edit-mode label {
   display: none;
 }
