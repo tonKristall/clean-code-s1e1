@@ -10,7 +10,7 @@ body {
     display: block;
     text-align: right;
 }
-.aaa img {
+.img-matrix {
     width: 100%;
 }
 .aaa .more_inf {
@@ -97,7 +97,7 @@ label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
 p > button:hover {
@@ -140,7 +140,7 @@ button.delete img:hover {
     transform: rotateZ(0);
 }
 /* completed */
-ul#completed-tasks label {
+#completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
@@ -148,10 +148,10 @@ ul#completed-tasks label {
 ul li input[type=text] {
     display: none;
 }
-ul li.editmode input[type=text] {
+.editmode input[type=text] {
     display: inline-block;
     width: 224px;
 }
-ul li.editmode label {
+.editmode label {
     display: none;
 }
