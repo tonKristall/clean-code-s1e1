@@ -27,7 +27,7 @@ body {
   }
 
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -139,7 +139,7 @@ button.delete img:hover {
   transform: rotateZ(0);
 }
 /* completed */
-#completed-tasks label {
+#complete label {
   text-decoration: line-through;
   color: #888;
 }
