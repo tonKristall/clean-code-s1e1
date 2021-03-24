@@ -20,7 +20,7 @@ body {
 .more_inf::first-letter {
     text-transform: uppercase;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
 .aaa { 
     text-align: center;
