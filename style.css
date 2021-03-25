@@ -72,10 +72,6 @@
   color: #333;
 }
 .button {
-  outline: none;
-  text-transform: capitalize;
-}
-.button {
   background: none;
   border: 0px;
   color: #888;
@@ -83,6 +79,8 @@
   width: 60px;
   font-family: lato, sans-serif;
   cursor: pointer;
+  outline: none;
+  text-transform: capitalize;
 }
 .button:hover {
   color: #3a3a3a;
@@ -119,18 +117,14 @@
 .task_display_none {
   display: none;
 }
-
-
-
-
 .delete:hover {
   color: #cf2323;
 }
-button img {
+.button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button img:hover {
+.button__img:hover {
   transform: rotateZ(0);
 }
