@@ -190,6 +190,19 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 
+const uppercaseFirstLetter = (str) => {
+    return str.length > 0 ? str[0].toUpperCase() + str.slice(1) : str.toUpperCase();
+}
+
+const capitalize = (str) => {
+    return str.split(' ').map(el => uppercaseFirstLetter(el)).join(' ');
+}
+
+const title = document.querySelector('title');
+title.innerText = capitalize(title.innerText);
+
+const headerLink = document.querySelector('.header__link');
+headerLink.innerText = uppercaseFirstLetter(headerLink.innerText);
 
 
 

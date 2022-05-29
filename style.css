@@ -65,6 +65,7 @@
   font-family: lato, sans-serif;
   cursor: pointer;
   outline: none;
+  text-transform: capitalize;
 }
 
 .list__btn:hover,
@@ -127,6 +128,10 @@
 
 .list__checkbox {
   margin: 0 10px;
+}
+
+.list__task {
+  text-transform: capitalize;
 }
 
 .list__task_label {
